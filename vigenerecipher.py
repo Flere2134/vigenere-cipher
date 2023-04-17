@@ -20,3 +20,4 @@ keyword = input('Enter the keyword: ')
 #encryption of plaintext
 ciphered_text = vigenere_cipher(plaintext, keyword)
 #print output
+print(f'\033[96m{ciphered_text}')
