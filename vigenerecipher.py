@@ -18,4 +18,5 @@ def vigenere_cipher(plaintext, keyword):
 plaintext = input('Write the message you wanted to cipher using Vigenere Cipher: ')
 keyword = input('Enter the keyword: ')
 #encryption of plaintext
+ciphered_text = vigenere_cipher(plaintext, keyword)
 #print output
