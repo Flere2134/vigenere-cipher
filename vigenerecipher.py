@@ -21,3 +21,9 @@ keyword = input('Enter the keyword: ')
 ciphered_text = vigenere_cipher(plaintext, keyword)
 #print output
 print(f'\033[96m{ciphered_text}')
+
+#try again function
+#asking for user input and checking it
+#if yes program runs again
+#if no prints a message
+#if answer is invalid asks user again
