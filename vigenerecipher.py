@@ -14,13 +14,6 @@ def vigenere_cipher(plaintext, keyword):
         ciphered_text += chr(modulo_value + 65)
 #return value of ciphered text
     return ciphered_text
-#ask user for input of plaintext and keyword
-plaintext = input('Write the message you wanted to cipher using Vigenere Cipher: ')
-keyword = input('Enter the keyword: ')
-#encryption of plaintext
-ciphered_text = vigenere_cipher(plaintext, keyword)
-#print output
-print(f'\033[96m{ciphered_text}')
 
 #try again function
 def try_again():
@@ -40,3 +33,13 @@ while again is None:
 #if answer is invalid asks user again
     else:
         print('Try answering either YES or NO')
+
+#while loop for the vigenere cipher and try again function
+while True:
+#ask user for input of plaintext and keyword
+    plaintext = input('Write the message you wanted to cipher using Vigenere Cipher: ')
+    keyword = input('Enter the keyword: ')
+#encryption of plaintext
+    ciphered_text = vigenere_cipher(plaintext, keyword)
+#print output
+    print(f'\033[96m{ciphered_text}')
