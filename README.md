@@ -1,6 +1,6 @@
 # Vigenere Cipher
 
-## Instructions
+### Instructions
 The Vigenère Cipher works as follows:
 
 Your key is a keyword, which you then translate into corresponding letter values 0 – 25. Then, to encrypt, write your message on one row (letters 0 – 25), and repeatedly write the keyword below it, adding each column, taking the result mod 26. These resultant numbers are the ciphertext. Here is a small example:
@@ -15,6 +15,6 @@ Write a program that asks the user for the plaintext (all uppercase letters, no 
 Message: THISISTHELASTTASKHOORDAY
 Key: KNIGHTS
 
-### Features
+#### Features
 - Has a try again function
 - Validates user input
