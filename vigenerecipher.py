@@ -37,9 +37,12 @@ def try_again():
 #if answer is invalid asks user again
         else:
             print('Try answering either YES or NO')
+#return value of again
+    return again
 
 #while loop for the vigenere cipher and try again function
-while True:
+again = True
+while again:
 #ask user for input of plaintext and keyword
     plaintext = input('Write the message you wanted to cipher using Vigenere Cipher: ')
     keyword = input('Enter the keyword: ')
