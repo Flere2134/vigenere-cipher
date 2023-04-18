@@ -24,7 +24,7 @@ def try_again():
     again = None
 #asking for user input and checking it
     while again is None:
-        answer = input('Would you like to try and use the VIGENERE CIPHER again? ')
+        answer = input('\nWould you like to try and use the VIGENERE CIPHER again? ')
 #if yes program runs again
         if answer in ["Y", "YES", "yes", "Yes", "y"]:
             again = True
@@ -46,11 +46,9 @@ while True:
 #encryption of plaintext
     ciphered_text = vigenere_cipher(plaintext, keyword)
 #print output
-    print(f'\033[96m{ciphered_text}')
+    print(f'The ciphered message you received is {ciphered_text}')
 #call try again function
-    try_again()
-    if not again:
-        break
+    again = try_again()
 
 #MESSAGE: THISISTHELASTTASKHOORDAY
 #KEYWORD: KNIGHTS
