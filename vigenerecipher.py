@@ -43,3 +43,7 @@ while True:
     ciphered_text = vigenere_cipher(plaintext, keyword)
 #print output
     print(f'\033[96m{ciphered_text}')
+#call try again function
+    try_again()
+    if not again:
+        break
