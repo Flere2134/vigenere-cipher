@@ -23,6 +23,8 @@ ciphered_text = vigenere_cipher(plaintext, keyword)
 print(f'\033[96m{ciphered_text}')
 
 #try again function
+def try_again():
+    again = None
 #asking for user input and checking it
 #if yes program runs again
 #if no prints a message
