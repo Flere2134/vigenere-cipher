@@ -26,7 +26,17 @@ print(f'\033[96m{ciphered_text}')
 def try_again():
     again = None
 #asking for user input and checking it
+while again is None:
     answer = input('Would you like to try and use the VIGENERE CIPHER again? ')
 #if yes program runs again
+    if answer in ["Y", "YES", "yes", "Yes", "y"]:
+        again = True
+        continue
 #if no prints a message
+    elif answer in ["N", "NO", "no", "No", "n"]:
+        again = False
+        print('Thank you for using the Vigenere Cipher!')
+        break
 #if answer is invalid asks user again
+    else:
+        print('Try answering either YES or NO')
