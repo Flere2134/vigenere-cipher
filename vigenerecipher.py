@@ -19,20 +19,20 @@ def vigenere_cipher(plaintext, keyword):
 def try_again():
     again = None
 #asking for user input and checking it
-while again is None:
-    answer = input('Would you like to try and use the VIGENERE CIPHER again? ')
+    while again is None:
+        answer = input('Would you like to try and use the VIGENERE CIPHER again? ')
 #if yes program runs again
-    if answer in ["Y", "YES", "yes", "Yes", "y"]:
-        again = True
-        continue
+        if answer in ["Y", "YES", "yes", "Yes", "y"]:
+            again = True
+            continue
 #if no prints a message
-    elif answer in ["N", "NO", "no", "No", "n"]:
-        again = False
-        print('Thank you for using the Vigenere Cipher!')
-        break
+        elif answer in ["N", "NO", "no", "No", "n"]:
+            again = False
+            print('Thank you for using the Vigenere Cipher!')
+            break
 #if answer is invalid asks user again
-    else:
-        print('Try answering either YES or NO')
+        else:
+            print('Try answering either YES or NO')
 
 #while loop for the vigenere cipher and try again function
 while True:
@@ -47,3 +47,6 @@ while True:
     try_again()
     if not again:
         break
+
+#MESSAGE: THISISTHELASTTASKHOORDAY
+#KEYWORD: KNIGHTS
