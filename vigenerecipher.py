@@ -4,7 +4,11 @@ def vigenere_cipher(plaintext, keyword):
     plaintext = plaintext.upper().replace(' ', '')
 #convert keyword to uppercase
     keyword = keyword.upper()
-##convert keyword to number
+#checking if input are in the alphabet
+    if not plaintext.isalpha() or not keyword.isalpha():
+        print('Invalid input! Please enter letters only and preferably in uppercase and no spaces')
+        return '' 
+#convert keyword to number
     keyword_convert_to_num = [ord(keyword[i]) - 65 for i in range(len(keyword))]
 #variable for ciphered text
     ciphered_text = ''
