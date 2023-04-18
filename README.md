@@ -14,3 +14,7 @@ Write a program that asks the user for the plaintext (all uppercase letters, no 
 
 Message: THISISTHELASTTASKHOORDAY
 Key: KNIGHTS
+
+### Features
+- Has a try again function
+- Validates user input
