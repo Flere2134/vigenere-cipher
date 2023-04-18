@@ -45,7 +45,7 @@ again = True
 while again:
 #ask user for input of plaintext and keyword
     plaintext = input('Write the message you wanted to cipher using Vigenere Cipher: ')
-    keyword = input('Enter the keyword: ')
+    keyword = input('Enter the keyword(one word only): ')
 #encryption of plaintext
     ciphered_text = vigenere_cipher(plaintext, keyword)
 #print output
